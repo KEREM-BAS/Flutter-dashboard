@@ -81,6 +81,24 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             majorTickLines: const MajorTickLines(size: 0),
                           ),
                         ),
+                        Container(
+                          padding: const EdgeInsets.all(defaultPadding),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                                width: 2, color: blackcolor.withOpacity(0.15)),
+                            borderRadius: const BorderRadius.all(
+                                Radius.circular(defaultPadding)),
+                          ),
+                          child: Row(
+                            children: [
+                              SizedBox(
+                                width: 30,
+                                height: 30,
+                                child: Image.asset("file.png"),
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
